@@ -10,8 +10,8 @@ namespace prueba_face
     {
         static async Task Main(string[] args)
         {
-            const string SUBSCRIPTION_KEY = "268eb38e97024633864cbdeedad05016";
-            const string ENDPOINT = "https://pruebafacejavicatala.cognitiveservices.azure.com/";
+            const string SUBSCRIPTION_KEY = "268eb38e97024633854cbdeedad05016";
+            const string ENDPOINT = "https://cursocefireface.cognitiveservices.azure.com/";
             const string IMAGE_BASE_URL = "https://csdx.blob.core.windows.net/resources/Face/Images/";
  
             FaceClient client = new FaceClient(new ApiKeyServiceClientCredentials(SUBSCRIPTION_KEY)) { Endpoint = ENDPOINT };
