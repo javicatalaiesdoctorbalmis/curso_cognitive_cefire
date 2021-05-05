@@ -13,7 +13,7 @@ namespace tema7_websearch
     {
         static async Task Main(string[] args)
         {
-            const string SUBSCRIPTION_KEY = "4a5cd79e75c749e5a027a84a35ebc09f";
+            const string SUBSCRIPTION_KEY = "PON AQUI TU CLAVE DE BING SEARCH";
             const string BUSQUEDA = "Zion Wiliamson";
 
             WebSearchClient client = new WebSearchClient(new ApiKeyServiceClientCredentials(SUBSCRIPTION_KEY));
