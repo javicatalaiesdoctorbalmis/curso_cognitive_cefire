@@ -22,7 +22,7 @@ namespace prueba_face
             Console.WriteLine("---Detección de caras---");
 
             //Definimos la lista de atributos que queremos obtener de cada cara
-            List<FaceAttributeType?> atributos = new List<FaceAttributeType?> 
+            List<FaceAttributeType> atributos = new List<FaceAttributeType> 
             {
                 FaceAttributeType.Age,FaceAttributeType.Gender
             };
@@ -95,7 +95,7 @@ namespace prueba_face
 
             //Detectamos las caras de una nueva imagen y las añadimos a una  lista
             IList<DetectedFace> carasIdentify = await client.Face.DetectWithUrlAsync($"{IMAGE_BASE_URL}"+"identification1.jpg",returnFaceId:true);
-            List<Guid?> listaCarasDetectadas = new List<Guid?>();
+            List<Guid> listaCarasDetectadas = new List<Guid>();
             foreach (DetectedFace cara in carasIdentify) 
             { 
                 listaCarasDetectadas.Add(cara.FaceId.Value); 
